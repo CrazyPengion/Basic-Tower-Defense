@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dsvxtegs2h18h"]
+
+[ext_resource type="Texture2D" uid="uid://c3njug3smnay8" path="res://assets/spr_tower_gun.png" id="1_djt4k"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dfsep"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_omb5t"]
+
+[node name="PistolTower" type="Node2D" unique_id=1658387782]
+
+[node name="Footprint" type="Area2D" parent="." unique_id=1343074383]
+
+[node name="Footprint" type="CollisionShape2D" parent="Footprint" unique_id=940753143]
+scale = Vector2(0.85, 0.85)
+shape = SubResource("CircleShape2D_dfsep")
+
+[node name="Range" type="Area2D" parent="." unique_id=1284164272]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range" unique_id=1441901495]
+scale = Vector2(3.5, 3.5)
+shape = SubResource("CircleShape2D_omb5t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1415195111]
+texture_filter = 1
+texture = ExtResource("1_djt4k")
