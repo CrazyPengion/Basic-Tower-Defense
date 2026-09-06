@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3njug3smnay8"
-path="res://.godot/imported/spr_tower_gun.png-f11675bbe10b36dcfd9e05aa00d15632.ctex"
+path="res://.godot/imported/spr_tower_gun.png-12c27eaeeccb254784425f2bbca602dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spr_tower_gun.png"
-dest_files=["res://.godot/imported/spr_tower_gun.png-f11675bbe10b36dcfd9e05aa00d15632.ctex"]
+source_file="res://assets/towers/spr_tower_gun.png"
+dest_files=["res://.godot/imported/spr_tower_gun.png-12c27eaeeccb254784425f2bbca602dd.ctex"]
 
 [params]
 

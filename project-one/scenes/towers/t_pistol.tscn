@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dsvxtegs2h18h"]
 
-[ext_resource type="Texture2D" uid="uid://c3njug3smnay8" path="res://assets/spr_tower_gun.png" id="1_djt4k"]
+[ext_resource type="Texture2D" uid="uid://c3njug3smnay8" path="res://assets/towers/spr_tower_gun.png" id="1_djt4k"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dfsep"]
 
