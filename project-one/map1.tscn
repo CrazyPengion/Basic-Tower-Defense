@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bmpcjjprgtkr1"]
+
+[ext_resource type="Texture2D" uid="uid://b5xuvc3lvomva" path="res://assets/map/grass/tile_grass_1.png" id="1_p84jh"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ibjaa"]
+texture = ExtResource("1_p84jh")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0sjvc"]
+sources/0 = SubResource("TileSetAtlasSource_ibjaa")
+
+[node name="TileMapLayer" type="TileMapLayer" unique_id=398423886]
+tile_set = SubResource("TileSet_0sjvc")
