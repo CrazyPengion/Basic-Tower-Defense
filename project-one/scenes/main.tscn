@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://d2qehq4xpq8li"]
 
-[ext_resource type="PackedScene" uid="uid://b1j6ehofrxdj3" path="res://scenes/maps/map1.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://b1j6ehofrxdj3" path="res://scenes/maps/map1.tscn" id="1_o5qli"]
 
 [node name="Node2D" type="Node2D" unique_id=1322467244]
 
-[node name="Map 1" parent="." unique_id=1833944454 instance=ExtResource("1_ig7tw")]
+[node name="Map 1" parent="." unique_id=1833944454 instance=ExtResource("1_o5qli")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1479374424]
 position = Vector2(128, 72)
