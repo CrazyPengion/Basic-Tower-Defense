@@ -6,6 +6,11 @@ const TOWER_SCENES := {
 	# "cannon": preload("res://scenes/towers/t_cannon.tscn")
 }
 
+# Define tower radii
+const TOWER_SIZE := {
+	"tile": 16, # tile side lenght
+	"pistol": 8
+}
 
 # 1. Detect LMB click + pos
 # This is what gets called by Godot, all following
@@ -25,9 +30,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		# Place tower
 		place_tower(tower_type, click_position)
 
-# 2. VERIFY POSITION - TODO: complete
+# 2. Verify Position
 func verify_position(tower_position: Vector2i) -> bool:
-	print("Checking br... 10101010101")
+	# WIP, use Area2D from tower for it? (If not remove the physics from path layer)
 	return true
 
 # 3. SHOW SELECTION SCREEN - TODO: complete
@@ -37,14 +42,11 @@ func select_tower() -> String:
 
 # 4. Place Tower
 func place_tower(tower_type: String, tower_pos: Vector2i) -> void:
-	if not TOWER_SCENES.has(tower_type):
-		print("Tower ID not found: ", tower_type)
-		return
 	
 	# 1. Instantiate the tower
 	var tower_scene: PackedScene = TOWER_SCENES[tower_type]
 	var tower_instance: Node2D = tower_scene.instantiate()
-	
+
 	# 2. Set world position
 	tower_instance.global_position = tower_pos
 	

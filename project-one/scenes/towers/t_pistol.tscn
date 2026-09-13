@@ -9,6 +9,8 @@
 [node name="PistolTower" type="Node2D" unique_id=1658387782]
 
 [node name="Footprint" type="Area2D" parent="." unique_id=1343074383]
+collision_layer = 0
+collision_mask = 2
 
 [node name="Footprint" type="CollisionShape2D" parent="Footprint" unique_id=940753143]
 scale = Vector2(0.85, 0.85)
